@@ -1,38 +1,164 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.fnt{
+  font-family: 'Poppins', sans-serif;
   color: white;
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+.caption-sub{
+  font-size: 25px;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.med{
+  font-size: 30px;
+}
+
+.centered-dsktp {
+  position: fixed;
+  top: 50%;
+  left: 16%;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+}
+
+.login-mob{
+  display: none;
+}
+
+.centered-mob{
+  display: none;
+}
+
+.xl-size{
+  font-size: 30px;
+}
+
+.coverImg{
+  height: 100%;
+  width: 100%;
+  filter: brightness(40%);
+}
+
+.blk-clr{
+  color: black;
+  opacity: 100%;
+}
+
+.fa-search{
+  color: orange;
+  font-size: 20px;
+}
+
+.abt-cap{
+  position: relative;
+  margin-top: -30%;
+}
+
+.home-cap{
+  position: relative;
+  margin-top: -100%;
+}
+
+.mobile-img{
+  display: none;
+}
+
+.srch-box{
+  position: relative;
+  margin-top: -30%;
+  padding-left: 55%;
+}
+
+.txt-about{
+  position: relative;
+  margin-top: -20%;
+  padding-left: 55%;
+}
+
+@media only screen and(max-width: 560px){
+  .login-mob{
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .login-dsktp{
+    display: none;
   }
 }
+
+@media only screen and (max-width: 610px){
+  .srch-box{
+    position: relative;
+    padding-left: 45%;
+  }
+  .dsktp-img{
+    display: none;
+  }
+  .mobile-img{
+    display: block;
+  }
+  .login-mob{
+    display: block;
+  }
+  
+  .login-dsktp{
+    display: none;
+  }
+}
+
+.srch-rslt{
+  position: relative;
+  top: -30%;
+}
+
+.myRow{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+}
+
+.myGrid{
+  display: grid;
+  grid-template-rows: 30% 70%;
+}
+
+.dsktp-srch{
+  display: block;
+  background: url('./Assets/serch-lap.png') repeat;
+}
+
+@media only screen and (max-width: 500px){
+  .srch-box{
+    position: relative;
+    margin-bottom: 0%;
+    padding-left: 10%;
+  }
+  .myGrid{
+    display: grid;
+    grid-template-columns: 10% 90%;
+  }
+  
+  .centered-dsktp{
+    display: none;
+  }
+
+  .centered-mob{
+    display: block;
+    position: absolute;
+    top: 45%;
+    font-weight: 600;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+  }
+  .login-mob{
+    display: block;
+  }
+  
+  .login-dsktp{
+    display: none;
+  }
+}
+
