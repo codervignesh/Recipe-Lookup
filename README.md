@@ -1,5 +1,5 @@
 
-### Live URL : https://the-recipe-lookup.netlify.app/  (or)  https://the-recipe-lookup.web.app/             
+### Live URL : https://the-recipe-lookup.netlify.app/          
 
 # Getting Started with Create React App
 
